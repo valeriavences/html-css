@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    
+    <h1>Imangem dinamica</h1>
+    <p>Tente abrir esse site em vários diposítivos diferentes ou símplemente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imangens/foto-p.png" 
+        type="image/png">
+        <source media="(max-width:1050px )" srcset="imangens/foto-m.png" type="image/png">
+        <img src="imangens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h2>Reproduzindo Áudio</h2>
+    <p>Vamos apreder a produzir áudio em HTML.</p>
+    <audio preload="auto" autoplay controls loop>
+        <source src="musica/MUSICA 9 45.mp3" type="audio/mpeg">
+        <source src="musica/MUSICA 10 44.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="musica/MUSICA 9 45.mp3"> clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+</body>
+</html>
